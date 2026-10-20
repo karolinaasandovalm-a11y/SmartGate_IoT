@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="55dp"
+        android:paddingBottom="32dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#25476A"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="26dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SmartGate IoT"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Control de acceso"
+                    android:textSize="15sp"
+                    android:textColor="#EDF4FA"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="Iniciar sesión"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#25394D"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ingresa tus credenciales para continuar"
+            android:textSize="14sp"
+            android:textColor="#64748B"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Usuario"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:labelFor="@id/edtUsuario" />
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="48dp"
+            android:hint="Ingresa tu usuario"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:autofillHints="username"
+            android:textSize="16sp"
+            android:textColor="#25394D"
+            android:textColorHint="#94A3B8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Contraseña"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:labelFor="@id/edtContrasena" />
+
+        <EditText
+            android:id="@+id/edtContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="48dp"
+            android:hint="Mínimo 13 caracteres"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:maxLength="64"
+            android:singleLine="true"
+            android:autofillHints="password"
+            android:textSize="16sp"
+            android:textColor="#25394D"
+            android:textColorHint="#94A3B8" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:minHeight="48dp"
+            android:text="INGRESAR"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#355C7D" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:text="VOLVER"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#64748B" />
+
+
+    </LinearLayout>
+
+</ScrollView>
